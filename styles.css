@@ -5,8 +5,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     margin-top: 50px;
     margin-left: 25%;
     margin-right: 25%;
@@ -15,16 +15,7 @@ body {
     justify-content: center;
 }
 
-/* .container > div {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
-    padding: 30px;
-    border: 1px solid black;
-    justify-self: center;
-    text-align: center;
-} */
-.container > div {
+.container .rollBox {
     margin: 5px;
     padding: 0;
     border: 1px solid black;
@@ -48,6 +39,42 @@ body {
     line-height: 1.1;
 }
 
+.container .totalBox {
+    margin: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    border: 1px solid black;
+    justify-self: center;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: robik, sans-serif;
+    background-color: gray;
+}
+
+.container .totalBoxMute {
+    margin: 0px !important;
+    padding: 0 !important;
+    border: 0px !important;
+    justify-self: center !important;
+    text-align: center !important;
+    width: 0px !important;
+    height: 0px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    font-family: robik, sans-serif !important;
+    background-color: lightgray !important;
+}
+
 .container .roll {
     font-size: 0.9em;
     color: #222;
@@ -59,6 +86,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*.container > div > .statsTotal {
+    position: relative;
+    left: 120px;
+    height: 0px;
+    color: gray;
+} */
 
 .container > div > button {
     bottom: 5px;
