@@ -78,6 +78,7 @@ function removeRollAllButton() {
     rollAllButton.parentNode.removeChild(rollAllButton);
 }
 
+// Adds total stats from each row to total boxes
 function addTotals() {
     let gridChildren = document.getElementById('grid').children;
     for (let i = 0; i < gridChildren.length; i++) {
@@ -140,7 +141,7 @@ function getRowBoxes(totalBoxIndex) {
             rowBoxes = [15,23,31,39,47,55];
             break;
         case 64:
-            rowBoxes = [9,18,27,36,45,54];
+            rowBoxes = [10,19,28,37,46,55];
             break;
         default:
             rowBoxes = [];
